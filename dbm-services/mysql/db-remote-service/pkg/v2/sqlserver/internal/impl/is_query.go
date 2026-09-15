@@ -30,6 +30,7 @@ var AdminCommands = &CommandClassifier{
 		"select",
 		"restore filelistonly",
 		"restore headeronly",
+		"dbcc inputbuffer",
 	},
 	executeCmds: []string{
 		"use",
@@ -42,6 +43,7 @@ var AdminCommands = &CommandClassifier{
 		"drop user",
 		"alter authorization",
 		"exec sp_addrolemember",
+		"set showplan_xml",
 	},
 }
 
@@ -53,6 +55,7 @@ var ReadOnlyCommands = &CommandClassifier{
 	queryCmds: []string{
 		"show",
 		"select",
+		"dbcc inputbuffer",
 	},
 	executeCmds: []string{},
 }
